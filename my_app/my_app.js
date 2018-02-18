@@ -3,7 +3,7 @@ var express = require("express");
 var myParser = require("body-parser");
 var app = express();
 
-app.use(myParser.urlencoded({
+app.use(myParser.json({
   extended: true
 }));
 
